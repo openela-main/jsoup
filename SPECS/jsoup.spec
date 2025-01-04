@@ -2,7 +2,7 @@
 
 Name:           jsoup
 Version:        1.13.1
-Release:        10%{?dist}
+Release:        11%{?dist}
 Summary:        Java library for working with real-world HTML
 License:        MIT
 URL:            http://jsoup.org/
@@ -65,6 +65,9 @@ jsoup will create a sensible parse tree.
 %license LICENSE
 
 %changelog
+* Wed Nov 20 2024 Marián Konček <mkoncek@redhat.com> - 1.13.1-11
+- Rebuild with regenerated Requires on Java
+
 * Tue Jan 31 2023 Mikolaj Izdebski <mizdebsk@redhat.com> - 1.13.1-10
 - Rebuild to regenerate auto-requires
 
