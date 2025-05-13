@@ -2,11 +2,12 @@
 
 Name:           jsoup
 Version:        1.13.1
-Release:        11%{?dist}
+Release:        13%{?dist}
 Summary:        Java library for working with real-world HTML
 License:        MIT
 URL:            http://jsoup.org/
 BuildArch:      noarch
+ExclusiveArch:  aarch64 ppc64le s390x x86_64 noarch
 
 # ./generate-tarball.sh
 Source0:        %{name}-%{version}.tar.gz
@@ -65,6 +66,12 @@ jsoup will create a sensible parse tree.
 %license LICENSE
 
 %changelog
+* Sat Nov 23 2024 Marián Konček <mkoncek@redhat.com> - 1.13.1-13
+- Add noarch to ExclusiveArch
+
+* Sat Nov 23 2024 Marián Konček <mkoncek@redhat.com> - 1.13.1-12
+- Disable building on i686
+
 * Wed Nov 20 2024 Marián Konček <mkoncek@redhat.com> - 1.13.1-11
 - Rebuild with regenerated Requires on Java
 
